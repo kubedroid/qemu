@@ -48,6 +48,7 @@ RUN apt-get update \
    libepoxy0 \
    libegl1-mesa \
    libdrm2 \
+   libgl1-mesa-dri \
 && rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /usr/local/ /usr/local/
