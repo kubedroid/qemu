@@ -49,6 +49,7 @@ RUN apt-get update \
    libegl1-mesa \
    libdrm2 \
    libgl1-mesa-dri \
+   libgl1 \
 && rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /usr/local/ /usr/local/
